@@ -11,7 +11,9 @@ import shutil
 import subprocess
 import sys
 import time
-from importlib import metadata
+import importlib
+import importlib_metadata as metadata
+importlib.metadata = metadata
 from pathlib import Path
 from typing import Optional
 
